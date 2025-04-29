@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>عمر فجر خضير</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <style>
+    @keyframes fadeSlideIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, p, .quote, .hala, .social-links {
+      animation: fadeSlideIn 1.5s ease-out forwards;
+    }
+
+    h1 { animation-delay: 0.2s; }
+    p:nth-of-type(1) { animation-delay: 0.4s; }
+    p:nth-of-type(2) { animation-delay: 0.6s; }
+    p:nth-of-type(3) { animation-delay: 0.8s; }
+    .quote { animation-delay: 1s; }
+    .hala { animation-delay: 1.2s; }
+    .social-links { animation-delay: 1.5s; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Amiri', serif;
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 300px;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    h1, p, .quote, .hala, .social-links {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    p, .quote, .hala {
+      font-size: 20px;
+      margin: 8px 0;
+    }
+
+    .quote {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .hala {
+      font-weight: bold;
+      font-size: 22px;
+      color: #ccc;
+    }
+
+    .social-links {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #111;
+      padding: 10px 20px;
+      border: 1px solid #888;
+      border-radius: 12px;
+      font-size: 16px;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-links a:hover {
+      background-color: #333;
+    }
+
+    .social-links img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>عمر فجر خضير</h1>
+  <p>طالب في ثانوية ذو النورين</p>
+  <p>من بغداد، العراق</p>
+  <p>هوايتي: كرة القدم</p>
+  <div class="quote">لا شيء مستحيل أمام الإرادة</div>
+  <div class="hala">Hala Madrid</div>
+
+  <div class="social-links">
+    <a href="https://www.snapchat.com/add/om200ar6?share_id=KwvOC-MuNGM&locale=ar-IQ" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg" alt="Snapchat"> Snapchat
+    </a>
+    <a href="https://www.facebook.com/share/18zMaQp3Zu/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook"> Facebook
+    </a>
+    <a href="https://t.me/c9oma" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"> Telegram
+    </a>
+    <a href="https://www.instagram.com/c9oma?igsh=bXYyaXNqZ3YwemZq" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram
+    </a>
+  </div>
+
+</body>
+</html>
